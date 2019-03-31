@@ -21,5 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
     path('users/',views.Users,name='users'),
-    path('list',views.list,name='list')
+    path('list/',views.list,name='list'),
+    path("list/<int:id>/", views.dynamic_view, name="dynamic_view"),
+    path("list/<int:id>/delete/", views.student_delete, name="delete")
 ]
