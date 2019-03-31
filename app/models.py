@@ -12,4 +12,4 @@ class Students(models.Model):
 
     # IN the reverse put the name of url ans id is same as id passes on the url    
     def get_absolute_url(self):
-        return reverse("dynamic_view", kwargs={"id": self.id}) #f"/list/{self.id}"
+        return reverse("dynamic_view", kwargs={"id": self.id}) #f"/list/{self.id}" 
